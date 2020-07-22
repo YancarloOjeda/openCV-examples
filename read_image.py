@@ -13,7 +13,8 @@ import cv2
 with cv2.imread we can read any image. The function receive two parameters. 
 Fist is the path to teh image, and second specifies the way image should be read.
 """
-image = cv2.imread('/home/yan/image.jpeg')
+image = cv2.imread('/home/yan/image.jpeg', cv2.IMREAD_GRAYSCALE)
+
 
 cv2.imshow('Image', image)
 cv2.waitKey(0)
